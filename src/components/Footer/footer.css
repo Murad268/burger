@@ -1,0 +1,16 @@
+footer {
+   background-color: #862429;
+   padding: 30px 0;
+}
+
+.footer__socials {
+   display: flex;
+   width: max-content;
+   margin: 0 auto;
+   column-gap: 20px;
+   font-size: 40px;
+}
+
+.footer__socials a {
+   color: white;
+}

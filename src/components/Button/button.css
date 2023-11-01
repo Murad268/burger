@@ -1,0 +1,12 @@
+.order_btn {
+   width: 170px;
+   height: 50px;
+   border-radius: 50px;
+   border: none;
+   background-color: #862429;
+   color: white;
+   font-weight: 300;
+   text-transform: uppercase;
+   font-size: 20px;
+   cursor: pointer;
+}

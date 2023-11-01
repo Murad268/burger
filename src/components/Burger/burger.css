@@ -1,0 +1,175 @@
+.content {
+  align-items: center;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  display: flex;
+  justify-content: center;
+  perspective: 600;
+}
+
+.card {
+  background-color: #fff;
+/*   border: 6px solid #fff; */
+  box-shadow: 0px 2px 10px #444;
+  height: 360px;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  transform-style: preserve-3d;
+  width: 340px;
+}
+
+.card .side::after {  
+  backface-visibility: hidden;
+  bottom: 0px;
+  border-color: transparent #111 #111 transparent;
+  border-style: solid;
+  border-width: 40px 40px 40px 40px;
+  content: "";
+  position: absolute;
+  right: 0px;
+  transition: all 0s !important;
+}
+
+.card .side::before {
+  backface-visibility: hidden;
+  bottom: 0px;
+  content: "+";
+  color: #fff;
+  font-size: 45px;
+  right: 12px;
+  position: absolute;
+  transition: all 0s !important;
+  z-index: 101;
+}
+
+.card-img {
+  height: 70%;
+  width: 100%;
+}
+.card-img-back {
+  height: 40%;
+  width: 100%;
+}
+.card-img img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-info {
+  align-items: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  height: 30%;
+  width: 100%;
+}
+.card-info-back {
+  height: 60%;
+}
+.card-info-title {
+  align-items: center;
+  display: flex;
+  font-family: 'Wendy One', sans-serif;
+  font-size: 25px;
+  justify-content: space-between;
+  padding: 10px;
+  width: 100%;
+}
+
+.card-info-title span {
+  color: #ffa801;
+  font-size: 18px !important;
+  font-weight: bold;
+}
+
+.card-info-text {
+  color: #555;
+  display: block;
+  font-size: 16px;
+  padding: 10px;
+  width: calc(100% - 50px)
+}
+
+/* .card {
+  transform: rotateY(180deg);
+} */
+
+.card .side {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card .back {
+  background-color: #fff;
+  backface-visibility: hidden;
+  height: 100%;
+  position: relative;
+  transform: rotateY(180deg);
+  width: 100%;
+  z-index: 102;
+}
+
+
+.card-form, .card-form form {
+  width: 100%;
+}
+
+.card-form form {
+  align-content: space-between;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.card-form button {
+  background-color: #ffa801;
+  border: none;
+  color: #fff;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 1px;
+  width: 30%;
+  cursor: pointer;
+}
+
+.card-form input[type='text'] {
+  height: 31px;
+  font-size: 20px;
+  margin: 0 10px;
+  text-align: center;
+  width: 20%;
+}
+
+.flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.card-form input[type='submit'] {
+  background-color: #05c46b;
+  border: none;
+  color: #fff;
+  padding: 7px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.card-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: #fff;
+  padding: 4px 10px;
+  color: #ff3f34;
+  font-size: 18px;
+  box-shadow: 2px 2px 10px #111;
+  cursor: pointer;
+}

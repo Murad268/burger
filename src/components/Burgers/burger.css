@@ -1,0 +1,13 @@
+.burgers {
+   padding: 40px 0;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   gap: 30px;
+}
+
+h1 {
+   text-align: center;
+   font-weight: bold;
+   font-size: 60px;
+   margin-top: 30px;
+}
